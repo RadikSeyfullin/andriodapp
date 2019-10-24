@@ -9,10 +9,11 @@
     tools:showIn="@layout/activity_main">
 
     <ListView
-        android:id="@+id/list_view"
+        android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="677dp"
+        android:layout_height="670dp"
+        tools:layout_editor_absoluteX="1dp"
         android:layout_alignParentBottom="true"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp" />
+        android:layout_marginTop="55dp"
+        />
 </RelativeLayout>

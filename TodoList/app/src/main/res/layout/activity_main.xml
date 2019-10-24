@@ -8,41 +8,50 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        fontPath="fonts/OpenSans-Light.ttf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:textAlignment="center">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:background="@color/accentColor"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:gravity = "center"
+                android:textSize="20sp"
+                android:textColor="@color/systemWhiteColor"
+                android:id="@+id/toolbar_title"/>
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
         layout="@layout/content_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="677dp"
+        android:layout_alignParentBottom="true" />
 
     <com.scalified.fab.ActionButton
         android:id="@+id/action_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
         fab:button_color="@color/pinkSearch"
         fab:button_colorPressed="@color/pinkSearchPressed"
         fab:image="@drawable/addtodoicon"
         fab:shadow_color="@color/systemShadow"
-        fab:shadow_radius="1.0dp"
-        fab:shadow_xOffset="0.5dp"
-        fab:shadow_yOffset="1.0dp"
-        fab:stroke_color="@color/systemBlackColor"
-        fab:stroke_width="1.0dp"
+        fab:shadow_xOffset="1dp"
+        fab:shadow_yOffset="1dp"
         fab:button_colorRipple="@color/fab_material_black"
         fab:rippleEffect_enabled="false"
         fab:shadowResponsiveEffect_enabled="true"

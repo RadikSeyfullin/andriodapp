@@ -7,17 +7,12 @@
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
-
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:background="#FFF"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:checked="false"
+        android:colorControlActivated="@color/accentColor"
         android:gravity="center_vertical"
-        android:padding="5dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#FF000000" />
+        android:theme="@style/MyCheckbox" />
 
 </LinearLayout>

@@ -9,7 +9,7 @@
     <color name="darkAccentColor">#077CA7</color>
     <color name="backgroundColor">#F8F8F8</color>
     <color name="placeholderColor">#AAB0BC</color>
-    <color name="pinkSearch">#A31D67</color>
+    <color name="pinkSearch">#E31E8B</color>
     <color name="pinkSearchPressed">#A31D67</color>
     <color name="systemShadow">#663E464F</color>
 </resources>
